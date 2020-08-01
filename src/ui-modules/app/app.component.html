@@ -8,9 +8,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body> 
-<app-login-button></app-login-button> 
-<div *ngIf="auth.loggedIn">
+  <div *ngIf="auth.loggedIn">  
+  <app-login-button></app-login-button> 
   <app-timeline></app-timeline>
+  <!-- <router-outlet></router-outlet> -->
 </div>
 </body>
 </html>
