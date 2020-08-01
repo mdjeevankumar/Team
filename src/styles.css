@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    height: 200px;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background: url('C:/AngularExpressProj/app/src/assets/Images/96462.jpg');
+}
+
