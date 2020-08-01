@@ -1,13 +1,13 @@
-import { Component, HostListener } from '@angular/core';
-import { isNgTemplate } from '@angular/compiler';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { AuthService } from 'src/services/Auth/auth.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-timeline',
+  templateUrl: './timeline.component.html',
+  styleUrls: ['./timeline.component.css']
 })
-export class AppComponent {
-  
+export class TimelineComponent implements OnInit {
+
   title = 'app';
   public rangeValue: any  = 1; 
   public rangeCtrlWidth: any = '100%';
@@ -16,7 +16,7 @@ export class AppComponent {
   }] ;
   public quarterlyDetails: any = [];
   
-constructor(){}
+constructor(public auth: AuthService){}
 
 ngOnInit()
 { 
@@ -60,4 +60,5 @@ else{
   }
 }
 }
+
 }

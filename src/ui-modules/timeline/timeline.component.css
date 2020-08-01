@@ -1,0 +1,14 @@
+.wid100{
+    width:100%;
+}
+.wid50{
+    width:50%;
+}
+
+.gfg_flex { 
+    display: flex; 
+    flex-direction: row; 
+    padding: .5rem!important;
+    flex: 1 1 auto!important;
+    color:white;
+} 
